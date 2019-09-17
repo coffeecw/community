@@ -1,5 +1,7 @@
 package com.cw.community.dto;
-
+/**
+ * 请求参数封装
+ */
 public class AccessTokenDTO {
     private String client_id;
     private String client_secret;
