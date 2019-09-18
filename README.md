@@ -25,9 +25,9 @@
 [springboot官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 
 
-##脚本
-```sqlcreate table user
-(
+##  脚本
+```sql
+create table user(
 	id int(100) auto_increment
 		primary key,
 	name varchar(50) ,
