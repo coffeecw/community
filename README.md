@@ -22,6 +22,22 @@
 
 [Authorizing-OAuth-App](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/#web-application-flow)
 
+[springboot官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
+
+
+##脚本
+```sqlcreate table user
+(
+	id int(100) auto_increment
+		primary key,
+	name varchar(50) ,
+	account_id varchar(100) ,
+	token varchar(36) ,
+	gmt_create bigint ,
+	gmt_modified bigint 
+);
+```
+
 ##  工具
 
 git:分布式版本控制工具
