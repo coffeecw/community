@@ -14,4 +14,6 @@ public interface UserMapper {
     //插入用户数据
     @Insert("insert into user (name,account_id,token,gmt_create,gmt_modified,avatar_url) values (#{name},#{accountId},#{token},#{gmtCreate},#{gmtModified},#{avatarUrl})")
      void insert(User user);
+    @Select("select * from user where id = #{id}")
+    User findById(@Param("id") Integer id);
 }

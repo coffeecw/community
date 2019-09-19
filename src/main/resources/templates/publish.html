@@ -54,26 +54,25 @@
     <div class="row">
         <!--左半部分-->
         <div class="col-lg-9 col-md-12 col-sm-12 col-sm-12"  >
-            <span class="glyphicon glyphicon-plus" aria-hidden="true" style="font-size: 25px;
-    top: 15px">发起</span>
+            <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
             <hr>
             <form action="/publish" method="post">
                 <div class="form-group">
                     <label for="title">问题标题（简单扼要）:</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="问题标题...">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="问题标题..." th:value="${title}">
                 </div>
                 <div class="form-group" id="question-editor">
                     <label for="description">问题补充 (必填，请参照右侧提示):</label>
                     <textarea name="description" id="description"
                               class="form-control"
                               cols="30"
-                              rows="10" ></textarea>
+                              rows="10" th:text="${description}"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="tag">添加标签:</label>
                     <input type="text" class="form-control" id="tag" name="tag"
                            autocomplete="off"
-                           placeholder="输入标签，以，号分隔" >
+                           placeholder="输入标签，以，号分隔" th:value="${tag}">
                 </div>
                 <span class="alert alert-danger" th:if="${error!=null}" th:text="${error}"></span>
                 <!--别忘记submit提交-->

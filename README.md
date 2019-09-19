@@ -24,9 +24,11 @@
 
 [springboot官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 
-[Lombok插件](https://projectlombok.org/)
-
 [github用户信息(users后面跟上你的用户名)](https://api.github.com/users/)
+
+[mybatis官网](https://mybatis.org/mybatis-3/)
+
+[thymeleaf官网](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#setting-attribute-values)
 
 ##  脚本
 ```sql
@@ -48,3 +50,7 @@ git:分布式版本控制工具
 [git官网](https://git-scm.com/)
 
 [Visual Paradigm](https://www.visual-paradigm.com/cn/)
+
+[Lombok插件](https://projectlombok.org/)
+
+[octotree插件](https://www.octotree.io)
