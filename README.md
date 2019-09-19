@@ -24,6 +24,9 @@
 
 [springboot官方文档](https://docs.spring.io/spring-boot/docs/2.0.0.RC1/reference/htmlsingle/#boot-features-embedded-database-support)
 
+[Lombok插件](https://projectlombok.org/)
+
+[github用户信息(users后面跟上你的用户名)](https://api.github.com/users/)
 
 ##  脚本
 ```sql

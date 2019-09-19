@@ -61,7 +61,13 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.60</version>
         </dependency>
-
+        <!--Lombok插件-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
         <!--热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -20,7 +20,7 @@ public class IndexController {
         //获取服务器发送的cookie
         Cookie[] cookies = request.getCookies();
         //循环遍历cookie
-        if(cookies!=null){
+        if(cookies!=null&&cookies.length!=0){//先判断浏览器cookie是否为空
             for (Cookie cookie:cookies) {
                 if(cookie.getName().equals("token")){
                     //验证服务器发送过来的cookie的值是否跟浏览器端匹配

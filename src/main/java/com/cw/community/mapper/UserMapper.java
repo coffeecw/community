@@ -12,6 +12,6 @@ public interface UserMapper {
     //注意单个参数要用@Param,对象则不需要
      User queryByToken(@Param("token") String token);
     //插入用户数据
-    @Insert("insert into user (name,account_id,token,gmt_create,gmt_modified) values (#{name},#{accountId},#{token},#{gmtCreate},#{gmtModified})")
+    @Insert("insert into user (name,account_id,token,gmt_create,gmt_modified,avatar_url) values (#{name},#{accountId},#{token},#{gmtCreate},#{gmtModified},#{avatarUrl})")
      void insert(User user);
 }
