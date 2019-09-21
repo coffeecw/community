@@ -2,9 +2,9 @@ package com.cw.community.controller;
 
 import com.cw.community.dto.AccessTokenDTO;
 import com.cw.community.dto.GithubUser;
-import com.cw.community.mapper.UserMapper;
 import com.cw.community.model.User;
 import com.cw.community.provider.GithubProvider;
+import com.cw.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
@@ -22,7 +23,7 @@ public class AuthorizeController {
     private GithubProvider githubProvider;
 
     @Autowired
-    private UserMapper userMapper;
+    private UserService userService;
 
     @Value("${github.client.id}")
     private String clientId;
@@ -59,7 +60,7 @@ public class AuthorizeController {
             user.setGmtModified(user.getGmtCreate());
             user.setAvatarUrl(githubUser.getAvatarUrl());
             //插入数据库
-            userMapper.insert(user);
+            userService.createOrUpdate(user);
             //服务器向浏览器发送一个cookie
             response.addCookie(new Cookie("token",token));
             return "redirect:/";
@@ -67,6 +68,17 @@ public class AuthorizeController {
             //登录失败,跳转到首页重新登录
             return "redirect:/";
         }
+    }
+    //退出登录
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request,HttpServletResponse response){
+        //清除session
+        request.getSession().removeAttribute("user");
+        //清除cookie
+        Cookie cookie = new Cookie("token", null);
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+        return "redirect:/";
     }
 
 }
