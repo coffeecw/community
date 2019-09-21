@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>技术社区</title>
+    <title th:text="${section}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!--引入bootstrap的css样式-->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!--自定义css样式-->
-    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="/css/community.css">
     <!--引入jQuery库 js样式才能生效-->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
     <!--bootstrap js type="application/javascript"记得加上-->
-    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="application/javascript"></script>
 
 
 
@@ -20,11 +20,11 @@
 <!--导航栏-->
 <div th:insert="~{navigation.html :: nav}"></div>
 <!--流式布局容器-->
-<div class="container-fluid main">
+<div class="container-fluid main profile">
     <div class="row">
         <!--左半部分-->
         <div class="col-lg-9 col-md-12 col-sm-12 col-sm-12"  >
-            <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
+            <h2><span th:text="${sectionName}"></span></h2>
             <hr>
             <!--问题列表-->
             <div class="media" th:each="questionDto : ${pagination.questions}">
@@ -37,7 +37,6 @@
                 <!--问题内容-->
                 <div class="media-body">
                     <h4 class="media-heading" th:text="${questionDto.title}"></h4>
-                    <span th:text="${questionDto.description}"></span><br>
                     <span class="text-color-999"> <span th:text="${questionDto.commentCount==null?0:1}"></span> 个回复 • <span th:text="${questionDto.viewCount==null?0:1}"></span> 个浏览 •<span th:text="${#dates.format(questionDto.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
                 </div>
             </div>
@@ -46,29 +45,29 @@
                 <ul class="pagination">
                     <!--第一页-->
                     <li th:if="${pagination.showFirstPage}">
-                        <a href="/?page=1" aria-label="Previous">
+                        <a th:href="@{'/profile/'+${section}(page=${1})}" aria-label="Previous">
                             <span aria-hidden="true">&lt;&lt;</span>
                         </a>
                     </li >
                     <!--上一页-->
                     <li th:if="${pagination.showPrevious}">
-                        <a th:href="@{/(page=${pagination.page-1})}" aria-label="Previous">
+                        <a th:href="@{'/profile/'+${section}(page=${pagination.page}-1)}" aria-label="Previous">
                             <span aria-hidden="true">&lt;</span>
                         </a>
                     </li >
                     <!--页码-->
                     <li th:each="  page : ${pagination.pages}"th:class="${pagination.page==page}?'active':''">
-                        <a th:href="@{/(page=${page})}" th:text="${page}"></a>
+                        <a th:href="@{'/profile/'+${section}(page=${page})}" th:text="${page}"></a>
                     </li>
                     <!--下一页-->
                     <li th:if="${pagination.showNext}">
-                        <a th:href="@{/(page=${pagination.page+1})}" aria-label="Previous">
+                        <a th:href="@{'/profile/'+${section}(page=${pagination.page}+1)}" aria-label="Previous">
                             <span aria-hidden="true">&gt;</span>
                         </a>
                     </li >
                     <!--最后一页-->
                     <li th:if="${pagination.showEndPage}">
-                        <a th:href="@{/(page=${pagination.totalPage})}" aria-label="Previous">
+                        <a th:href="@{'/profile/'+${section}(page=${pagination.totalPage})}" aria-label="Previous">
                             <span aria-hidden="true">&gt;&gt;</span>
                         </a>
                     </li >
@@ -76,10 +75,17 @@
             </nav>
         </div>
         <!--右半部分-->
-        <div class="col-lg-3 col-md-12 col-sm-12 col-sm-12">
-            <h3>热门话题</h3>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-sm-12"  >
+        <div class="list-group section" >
+            <a href="/profile/questions" th:class="${section=='questions'}?'active list-group-item':'list-group-item'">我的问题</a>
+            <a href="/profile/replies" th:class="${section=='replies'}?'active list-group-item':'list-group-item'">
+                最新回复
+                <span class="badge">14</span>
+            </a>
+        </div>
         </div>
     </div>
+
 </div>
 </body>
 </html>
