@@ -36,9 +36,11 @@
                 </div>
                 <!--问题内容-->
                 <div class="media-body">
-                    <h4 class="media-heading" th:text="${questionDto.title}"></h4>
+                    <h4 class="media-heading">
+                        <a th:href="@{'/question/'+${questionDto.id}}" th:text="${questionDto.title}"></a>
+                    </h4>
                     <span th:text="${questionDto.description}"></span><br>
-                    <span class="text-color-999"> <span th:text="${questionDto.commentCount==null?0:1}"></span> 个回复 • <span th:text="${questionDto.viewCount==null?0:1}"></span> 个浏览 •<span th:text="${#dates.format(questionDto.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
+                    <span class="text-color-999"> <span th:text="${questionDto.commentCount==null?0:questionDto.commentCount}"></span> 个回复 • <span th:text="${questionDto.viewCount==null?0:questionDto.viewCount}"></span> 个浏览 •<span th:text="${#dates.format(questionDto.gmtCreate,'yyyy-MM-dd HH:mm')}"></span></span>
                 </div>
             </div>
             <!--分页栏-->
