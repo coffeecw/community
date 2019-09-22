@@ -4,13 +4,13 @@
     <title>发布-技术社区</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!--引入bootstrap的css样式和js-->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!--自定义css样式-->
-    <link rel="stylesheet" href="css/community.css">
+    <link rel="stylesheet" href="/css/community.css">
     <!--引入jQuery库 js样式才能生效-->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script src="/js/bootstrap.min.js" type="application/javascript"></script>
 </head>
 <body>
 <!--导航栏-->
@@ -23,6 +23,8 @@
             <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
             <hr>
             <form action="/publish" method="post">
+                <!--name属性记得加-->
+                <input type="hidden" th:value="${id}" name="id">
                 <div class="form-group">
                     <label for="title">问题标题（简单扼要）:</label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="问题标题..." th:value="${title}">
