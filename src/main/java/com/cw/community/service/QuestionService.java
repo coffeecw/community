@@ -114,4 +114,13 @@ public class QuestionService {
             }
         }
     }
+    //增加阅读数
+    public void incView(Integer id) {
+        //查询数据库中的数据
+        Question question = questionMapper.getById(id);
+        Question updatedQuestion = new Question();
+        BeanUtils.copyProperties(question,updatedQuestion);
+        questionMapper.incViewQuestion(updatedQuestion);
+
+    }
 }

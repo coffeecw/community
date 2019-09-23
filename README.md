@@ -57,4 +57,8 @@ git:分布式版本控制工具
 
 [Lombok插件](https://projectlombok.org/)
 
-[octotree插件](https://www.octotree.io)
+[octotree](https://www.octotree.io)
+
+[Table of content sidebar](https://chrome.google.com/webstore/detail/table-of-contents-sidebar/ohohkfheangmbedkgechjkmbepeikkej)
+
+[one Tab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)

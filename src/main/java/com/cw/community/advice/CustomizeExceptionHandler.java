@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 @ControllerAdvice
 public class CustomizeExceptionHandler {
     @ExceptionHandler(Exception.class)
-    ModelAndView handleControllerException(HttpServletRequest request, Throwable e, Model model) {
+    ModelAndView handleControllerException(Throwable e, Model model) {
         //处理运行时出现的异常
         if(e instanceof CustomizeException){
             model.addAttribute("message",e.getMessage());
