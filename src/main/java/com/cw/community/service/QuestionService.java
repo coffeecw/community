@@ -2,6 +2,8 @@ package com.cw.community.service;
 
 import com.cw.community.dto.PaginationDTO;
 import com.cw.community.dto.QuestionDTO;
+import com.cw.community.exception.CustomerErrorCode;
+import com.cw.community.exception.CustomizeException;
 import com.cw.community.mapper.QuestionMapper;
 import com.cw.community.mapper.UserMapper;
 import com.cw.community.model.Question;
@@ -84,6 +86,11 @@ public class QuestionService {
     //问题详情
     public QuestionDTO findById(Integer id) {
         Question question = questionMapper.getById(id);
+        //异常处理(当客户向浏览器地址栏输入数据库不存在的问题id时)
+        if(question==null){
+            //抛出自定义异常
+            throw new CustomizeException(CustomerErrorCode.QUESTION_NOT_FIND);
+        }
         User user =  userMapper.findById(question.getCreator());
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);
@@ -101,7 +108,10 @@ public class QuestionService {
             //更新
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
-            questionMapper.updateById(question);
+            int updated = questionMapper.updateById(question);
+            if(updated!=1){//说明更新失败，因为这条数据可能已经被删除
+                throw new CustomizeException(CustomerErrorCode.QUESTION_NOT_FIND);
+            }
         }
     }
 }

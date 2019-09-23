@@ -22,10 +22,14 @@ body{
 .main .section{
     margin-top: 20px;
 }
-
+/*编辑*/
 .edit{
     color: #999;
     font-size: 13px;
+}
+/*错误页面*/
+.jumbotron{
+    margin: 150px;
 }
 
 

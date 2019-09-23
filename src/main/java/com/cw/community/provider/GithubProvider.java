@@ -49,8 +49,8 @@ public class GithubProvider {
            //获取响应的字符串
            String str = response.body().string();
            //将字符串转换为GithubUser对象
-           GithubUser jsonObject = JSON.parseObject(str,GithubUser.class);
-           return jsonObject;
+           GithubUser githubUser = JSON.parseObject(str,GithubUser.class);
+           return githubUser;
        } catch (IOException e) {
            e.printStackTrace();
        }

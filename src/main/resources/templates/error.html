@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>技术社区</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--引入bootstrap的css样式-->
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!--自定义css样式-->
+    <link rel="stylesheet" href="/css/community.css">
+    <!--引入jQuery库 js样式才能生效-->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!--bootstrap js type="application/javascript"记得加上-->
+    <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+</head>
+<body>
+<!--导航栏-->
+<div th:insert="~{navigation.html :: nav}"></div>
+        <div class="jumbotron">
+            <h3>错误页面</h3>
+            <p th:text="${message}">服务器太繁忙了！！！</p>
+            <p><a class="btn btn-primary btn-lg" href="/" role="button">点击此处跳转到首页</a></p>
+        </div>
+</body>
+</html>
