@@ -15,7 +15,16 @@ function post() {
             if(response.code==200){
                 $("#comment_section").hide();
             }else{
-                alert(response.message);
+                if(response.code==1002){
+                    var isAccepted = confirm(response.message);
+                    if(isAccepted){
+                        window.open("https://github.com/login/oauth/authorize?client_id=fa9efdea9271da2c50a6&redirect_uri=http://localhost:8888/callback&scope=user&state=1");
+                        //web存储
+                        window.localStorage.setItem("closeable",true);
+                    }else{
+                        alert(response.message);
+                    }
+                }
             }
            console.log(response);
         },

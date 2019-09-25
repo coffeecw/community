@@ -12,7 +12,16 @@
     <script src="/js/jquery-3.4.1.min.js"></script>
     <!--bootstrap js type="application/javascript"记得加上-->
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
-
+    <script type="application/javascript">
+        window.onload=function () {
+            // debugger;
+            var closeable = window.localStorage.getItem("closeable");
+            if(closeable=="true"){
+                window.close();
+                closeable.localStorage.removeItem("closeable");
+            }
+        }
+    </script>
 
 
 </head>
