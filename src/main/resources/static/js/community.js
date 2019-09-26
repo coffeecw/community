@@ -1,6 +1,12 @@
 function post() {
     var questionId = $("#question_id").val();
     var content = $("#text-comment").val();
+    //js前端校验回复内容
+    if(!content){//js中content内容为空返回false
+        alert("回复的内容不能为空！");
+        return;
+    }
+
     $.ajax({
         type: "POST",
         url: "/comment",
@@ -13,7 +19,8 @@ function post() {
             }),
         success: function (response) {
             if(response.code==200){
-                $("#comment_section").hide();
+                //刷新当前页面
+                window.location.reload();
             }else{
                 if(response.code==1002){
                     var isAccepted = confirm(response.message);

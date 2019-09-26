@@ -9,7 +9,9 @@ public enum CustomerErrorCode implements ICustomizeErrorCode {
     SYS_ERROR("服务器冒烟了,请稍后再试试",1003),
     TARGET_PARAM_NOT_FOUND("未选中任何问题或评论进行回复",1004 ),
     TYPE_PARAM_WRONG("评论类型错误或不存在", 1005),
-    COMMENT_NOT_FOUND("回复的评论不存在了，要不要换个试试？",1006 )
+    COMMENT_NOT_FOUND("回复的评论不存在了，要不要换个试试？",1006 ),
+    CONTENT_NOT_EMPTY("回复的内容不能为空！" +
+            "",1007)
     ;
     private String  message;
     private Integer code;

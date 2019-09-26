@@ -31,7 +31,7 @@ public interface QuestionMapper {
     //根据用户id更新阅读数
     @Update("update question set  view_count=#{viewCount}+1 where id = #{id}")
     int incViewQuestion(Question updatedQuestion);
-
+    //更新回复数
     @Update("update question set  comment_count=#{commentCount}+1 where id = #{id}")
     int incCommentCount(Question question);
 }

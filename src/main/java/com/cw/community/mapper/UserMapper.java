@@ -3,6 +3,9 @@ package com.cw.community.mapper;
 import com.cw.community.model.User;
 import org.apache.ibatis.annotations.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Mapper
 public interface UserMapper {
     @Select("select * from user where token = #{token}")
@@ -17,4 +20,7 @@ public interface UserMapper {
     User findByAccount(@Param("accountId")String accountId);
     @Update("update user set name = #{name},token=#{token},gmt_modified=#{gmtModified},avatar_url=#{avatarUrl} where id = #{id}")
     void update(User user);
+    //查询所有的评论人
+    @Select("<script>" + "SELECT * FROM user WHERE id IN " + "<foreach item='item' index='index' collection='userIds' open='(' separator=',' close=')'>" + "#{item}"+ "</foreach>"+ "</script>")
+    List<User> findByIds(@Param("userIds") ArrayList<Integer> userIds);
 }
