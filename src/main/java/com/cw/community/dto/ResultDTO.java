@@ -9,9 +9,10 @@ import lombok.Data;
  * 根据后端逻辑，给前端返回一个状态码和信息
  */
 @Data
-public class ResultDTO {
+public class ResultDTO<T> {
     private String message;
     private Integer code;
+    private T data;
     //根据后端逻辑，返回给前端信息和状态码
     public static ResultDTO error0f(String message,Integer code){
         ResultDTO resultDTO = new ResultDTO();
@@ -38,6 +39,15 @@ public class ResultDTO {
         ResultDTO resultDTO = new ResultDTO();
         resultDTO.setMessage(e.getMessage());
         resultDTO.setCode(e.getCode());
+        return resultDTO;
+    }
+
+    //客户端请求成功
+    public static <T> ResultDTO okOf(T t){
+        ResultDTO resultDTO = new ResultDTO();
+        resultDTO.setCode(200);
+        resultDTO.setMessage("请求成功");
+        resultDTO.setData(t);
         return resultDTO;
     }
 }

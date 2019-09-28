@@ -3,6 +3,7 @@ package com.cw.community.controller;
 import com.cw.community.dto.CommentCreateDTO;
 import com.cw.community.dto.CommentDTO;
 import com.cw.community.dto.QuestionDTO;
+import com.cw.community.enums.CommentTypeEnum;
 import com.cw.community.service.CommentService;
 import com.cw.community.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +30,7 @@ public class QuestionController {
         //增加阅读数
         questionService.incView(id);
         //查询所有的回复
-        List<CommentDTO> comment = commentService.listByQuestionId(id);
+        List<CommentDTO> comment = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
         System.out.println(comment);
         model.addAttribute("questionDTO",questionDTO);
         model.addAttribute("comments",comment);

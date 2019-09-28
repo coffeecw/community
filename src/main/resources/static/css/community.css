@@ -55,17 +55,35 @@ body{
     /*鼠标移动到图标上变小手*/
     cursor: pointer;
 }
+/*点击评论显示高亮通过js控制css*/
+.menu .active{
+    color: #499ef3;
+}
+
 .menu .icon:hover{
     color: #499ef3;
 }
-.commnet-hr{
+.comments .commnet-hr{
     margin-top: 0px;
 }
 .question-title{
     margin-top: 30px;
 }
+/*二级评论的样式*/
+.sub-comment .commnet-hr{
+    margin-top: 0px;
+}
 
-
+.sub-comment{
+    margin-top: 10px;
+    border: 1px solid #eee;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.sub-comment .btn{
+    margin: 10px 0;
+}
 
 
 
