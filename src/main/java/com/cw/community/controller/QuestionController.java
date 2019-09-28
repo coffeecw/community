@@ -27,6 +27,8 @@ public class QuestionController {
     @GetMapping("/question/{id}")
     public String question(@PathVariable("id") Integer id, Model model){
         QuestionDTO questionDTO =  questionService.findById(id);
+        //通过已经查询出来的questionDTO获取tag(标签)
+        List<QuestionDTO> questionDTOList = questionService.selectRelated(questionDTO);
         //增加阅读数
         questionService.incView(id);
         //查询所有的回复
@@ -34,6 +36,7 @@ public class QuestionController {
         System.out.println(comment);
         model.addAttribute("questionDTO",questionDTO);
         model.addAttribute("comments",comment);
+        model.addAttribute("questionDTOList",questionDTOList);
         return "question";
     }
 
