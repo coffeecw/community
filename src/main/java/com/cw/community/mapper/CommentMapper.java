@@ -1,10 +1,7 @@
 package com.cw.community.mapper;
 
 import com.cw.community.model.Comment;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -22,4 +19,6 @@ public interface CommentMapper {
     //根据parentId(问题id)和type(问题)查询所有的comment,按创建时间的降序排列
     @Select("select * from comment where parent_id = #{id} and type = #{type} order by gmt_create desc")
     List<Comment> selectByQuestionIdAndType(@Param("id") Integer id, @Param("type") Integer type);
+    @Update("update comment set  comment_count=#{commentCount}+1 where id = #{id}")
+    int incCommentCount(Comment parentComment);
 }

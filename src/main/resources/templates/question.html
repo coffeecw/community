@@ -19,8 +19,11 @@
 <body>
 <!--导航栏-->
 <div th:insert="~{navigation.html :: nav}"></div>
+
 <!--流式布局容器-->
 <div class="container-fluid main profile">
+
+    <!--左半部分-->
     <div class="row col-lg-9 col-md-12 col-sm-12 col-xs-12">
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -64,8 +67,12 @@
                         <!--图标和日期信息-->
                         <div class="menu">
                             <span class="glyphicon glyphicon-thumbs-up icon" aria-hidden="true"></span>
-                            <span class="glyphicon glyphicon-comment icon" aria-hidden="true"
-                                  th:data-id="${comment.id}" onclick="collapseComments(this)"></span>
+                            <span class="icon">
+                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"
+                                       th:data-id="${comment.id}" onclick="collapseComments(this)"></span>
+                                 <span th:text="${comment.commentCount}"></span>
+                            </span>
+
                             <span class="pull-right" th:text="${#dates.format(comment.gmtCreate,'yyyy-MM-dd')}"></span>
                         </div>
                         <!--二级评论-->
@@ -74,13 +81,13 @@
 
                             <!--评论框-->
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <input type="text" class="form-control" placeholder="评论一下..." th:id="'input-'+${comment.id}">
-                                <button type="button" class="btn btn-success pull-right" th:data-id="${comment.id}" onclick="comment(this)">评论</button>
+                                <input type="text" class="form-control" placeholder="评论一下..."
+                                       th:id="'input-'+${comment.id}">
+                                <button type="button" class="btn btn-success pull-right" th:data-id="${comment.id}"
+                                        onclick="comment(this)">评论
+                                </button>
                             </div>
                         </div>
-
-
-
                         <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12 commnet-hr">
                     </div>
                 </div>
@@ -116,32 +123,28 @@
 
     </div>
 
-</div>
+    <!--右半部分-->
+    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 
-<!--右半部分-->
-<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+        <h3>发起人</h3>
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object img-rounded" th:src="@{${questionDTO.user.avatarUrl}}">
+            </a>
+        </div>
+        <div class="media-left">
+            <h5>
+                <span th:text="${questionDTO.user.name}"></span>
+            </h5>
+        </div>
+        <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h3>相关问题</h3>
+        </div>
 
-    <h3>发起人</h3>
-    <div class="media-left">
-        <a href="#">
-            <img class="media-object img-rounded" th:src="@{${questionDTO.user.avatarUrl}}">
-        </a>
     </div>
-    <div class="media-left">
-        <h5>
-            <span th:text="${questionDTO.user.name}"></span>
-        </h5>
-    </div>
-    <hr class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h3>相关问题</h3>
-    </div>
 
 </div>
 
-</div>
-
-</div>
 </body>
 </html>

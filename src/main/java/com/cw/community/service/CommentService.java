@@ -47,7 +47,10 @@ public class CommentService {
             if(dbComment==null){
                 throw new CustomizeException(CustomerErrorCode.COMMENT_NOT_FOUND);
             }
+            //添加评论
             commentMapper.insert(comment);
+            //增加评论数
+            commentMapper.incCommentCount(dbComment);
         }else{
             //回复问题
             Question question = questionMapper.getById(comment.getParentId());
