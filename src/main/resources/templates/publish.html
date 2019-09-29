@@ -11,6 +11,7 @@
     <!--引入jQuery库 js样式才能生效-->
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/js/community.js" type="application/javascript"></script>
 </head>
 <body>
 <!--导航栏-->
@@ -41,8 +42,26 @@
                     <label for="tag">添加标签:</label>
                     <input type="text" class="form-control" id="tag" name="tag"
                            autocomplete="off"
-                           placeholder="输入标签，以，号分隔" th:value="${tag}">
+                           placeholder="输入标签，以，号分隔" th:value="${tag}" onclick="showSelectTag()">
                 </div>
+
+
+                <div id="select-tag" class="publish-tab-tag">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"  th:each="tag: ${tags}">
+                            <a th:href="${'#'+tag.categoryName}" aria-controls="home" role="tab" data-toggle="tab" th:text="${tag.categoryName}"></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content publish-tag-padding">
+                        <div role="tabpanel" class="tab-pane"  th:id="${selectCategory.categoryName}" th:each="selectCategory:${tags}" >
+                            <span class="label label-info" th:each="selectTag:${selectCategory.tags}">
+                                <span class="glyphicon glyphicon-tags" onclick="selectTag(this)" th:text="${selectTag}" th:data-tag="${selectTag}"></span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
                 <span class="alert alert-danger" th:if="${error!=null}" th:text="${error}"></span>
                 <!--别忘记submit提交-->
                 <button type="submit" class="btn btn-success btn-publish">发布</button>

@@ -33,7 +33,7 @@ public class QuestionController {
         questionService.incView(id);
         //查询所有的回复
         List<CommentDTO> comment = commentService.listByTargetId(id, CommentTypeEnum.QUESTION);
-        System.out.println(comment);
+//        System.out.println(comment);
         model.addAttribute("questionDTO",questionDTO);
         model.addAttribute("comments",comment);
         model.addAttribute("questionDTOList",questionDTOList);
