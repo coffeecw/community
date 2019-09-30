@@ -10,8 +10,9 @@ public enum CustomerErrorCode implements ICustomizeErrorCode {
     TARGET_PARAM_NOT_FOUND("未选中任何问题或评论进行回复",1004 ),
     TYPE_PARAM_WRONG("评论类型错误或不存在", 1005),
     COMMENT_NOT_FOUND("回复的评论不存在了，要不要换个试试？",1006 ),
-    CONTENT_NOT_EMPTY("回复的内容不能为空！" +
-            "",1007)
+    CONTENT_NOT_EMPTY("回复的内容不能为空！" ,1007),
+    READ_NOTIFICATION_FAIL("兄弟你这是读别人信息呢？" ,1008),
+    NOTIFICATION_NOT_FIND("消息莫非不翼而飞了？",1009),
     ;
     private String  message;
     private Integer code;

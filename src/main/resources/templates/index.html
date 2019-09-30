@@ -36,7 +36,7 @@
             <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
             <hr>
             <!--问题列表-->
-            <div class="media" th:each="questionDto : ${pagination.questions}">
+            <div class="media" th:each="questionDto : ${pagination.data}">
                 <!--用户头像-->
                 <div class="media-left">
                     <a href="#">

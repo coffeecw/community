@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class PaginationDTO {
+public class PaginationDTO<T> {
         //问题对象
-        private List<QuestionDTO> questions;
+        private List<T> data;
         //上一页
         private boolean showPrevious;
         //第一页
