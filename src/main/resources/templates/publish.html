@@ -48,14 +48,14 @@
 
                 <div id="select-tag" class="publish-tab-tag">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation"  th:each="tag: ${tags}">
+                        <li role="presentation"  th:each="tag,tagStat: ${tags}" th:class="${tagStat.first ? 'active':''}">
                             <a th:href="${'#'+tag.categoryName}" aria-controls="home" role="tab" data-toggle="tab" th:text="${tag.categoryName}"></a>
                         </li>
                     </ul>
                     <div class="tab-content publish-tag-padding">
-                        <div role="tabpanel" class="tab-pane"  th:id="${selectCategory.categoryName}" th:each="selectCategory:${tags}" >
+                        <div role="tabpanel" class="tab-pane" th:classappend="${tagStat.first ? 'active':''}" th:id="${selectCategory.categoryName}" th:each="selectCategory,tagStat:${tags}" >
                             <span class="label label-info" th:each="selectTag:${selectCategory.tags}">
-                                <span class="glyphicon glyphicon-tags" onclick="selectTag(this)" th:text="${selectTag}" th:data-tag="${selectTag}"></span>
+                                <span class="glyphicon glyphicon-tags" onclick="selectTag(this)" th:text="${' '+selectTag}" th:data-tag="${selectTag}"></span>
                             </span>
                         </div>
                     </div>

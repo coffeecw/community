@@ -44,8 +44,10 @@ body{
     padding-top: 10px;
 }
 .publish-tab-tag .label-info{
-    margin-top: 45px;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 10px 10px;
+    white-space: normal;
+    font-size: 15px;
 }
 /*编辑*/
 .edit{
