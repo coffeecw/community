@@ -2,6 +2,7 @@ package com.cw.community.interceptor;
 
 import com.cw.community.mapper.UserMapper;
 import com.cw.community.model.User;
+import com.cw.community.service.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -18,6 +19,9 @@ import javax.servlet.http.HttpServletResponse;
 public class SessionInterceptor implements HandlerInterceptor {
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private NotificationService notificationService;
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //获取服务器发送的cookie
@@ -31,6 +35,8 @@ public class SessionInterceptor implements HandlerInterceptor {
                     User user = userMapper.queryByToken(token);
                     if(user!=null){
                         request.getSession().setAttribute("user",user);
+                        Integer unreadCount = notificationService.unreadCount(user.getId());
+                        request.getSession().setAttribute("unreadCount",unreadCount);
                     }
                     break;
                 }

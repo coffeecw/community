@@ -12,7 +12,7 @@ public interface NotificationMapper {
     int insert(Notification notification);
     @Select("select count(1) from notification where receiver = #{userId}")
     Integer countByUserId(@Param("userId") Integer userId);
-    @Select("select * from notification where receiver = #{userId} limit #{offset},#{size}")
+    @Select("select * from notification where receiver = #{userId} order by gmt_create desc limit #{offset},#{size}")
     List<Notification> listByUser(@Param("userId") Integer userId, @Param("offset") Integer offset, @Param("size") Integer size);
     @Select("select * from notification where id = #{id}")
     Notification selectById(@Param("id") Integer id);

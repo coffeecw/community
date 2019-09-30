@@ -40,11 +40,9 @@ public class ProfileController {
         }else if("replies".equals(action)){
             //查询通知列表
             PaginationDTO pagination = notificationService.list(user.getId(), page, size);
-            Integer unreadCount = notificationService.unreadCount(user.getId());
             model.addAttribute("pagination",pagination);
             model.addAttribute("section","replies");
             model.addAttribute("sectionName","最新回复");
-            model.addAttribute("unreadCount",unreadCount);
         }
 
         return "profile";
