@@ -79,6 +79,10 @@ public class CommentService {
     }
     //创建通知的方法
     private void createNotify(Comment comment, Integer receiver, String outerTitle, String notifierName, NotificationTypeEnum notificationType, Integer outerId) {
+        //接收通知跟创建通知的人是同一个人，就不用了创建通知了
+       if(receiver==comment.getCommentator()){
+           return;
+       }
         Notification notification = new Notification();
         notification.setGmtCreate(System.currentTimeMillis());
         notification.setType(notificationType.getType());

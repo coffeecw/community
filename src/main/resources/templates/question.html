@@ -127,13 +127,13 @@
                 <!--头像-->
                 <div class="media-left">
                     <a href="#">
-                        <img class="media-object img-rounded" th:src="@{${questionDTO.user.avatarUrl}}">
+                        <img class="media-object img-rounded" th:src="${session.user!=null?session.user.avatarUrl:'/images/default-avatar.png'}">
                     </a>
                 </div>
                 <!--用户名-->
                 <div class="media-left media-comment">
                     <h5>
-                        <span th:text="${questionDTO.user.name}"></span>
+                        <span th:text="${session.user!=null?session.user.name:'匿名用户'}"></span>
                     </h5>
                 </div>
                 <!--用户id-->
