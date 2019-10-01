@@ -13,6 +13,7 @@ public enum CustomerErrorCode implements ICustomizeErrorCode {
     CONTENT_NOT_EMPTY("回复的内容不能为空！" ,1007),
     READ_NOTIFICATION_FAIL("兄弟你这是读别人信息呢？" ,1008),
     NOTIFICATION_NOT_FIND("消息莫非不翼而飞了？",1009),
+    FiLE_UPLOAD_FAIL("图片上传失败",1010)
     ;
     private String  message;
     private Integer code;
