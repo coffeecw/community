@@ -1,4 +1,22 @@
-##  技术社区 
+##  技术社区   
+
+##部署
+###依赖
+- git  (git工具管理项目版本)
+- JDK   (编译代码)
+- Maven  (构建项目)
+- MySql   (数据库)
+##步骤
+- yum update (更新yum)
+- yum install git 
+- mkdir App
+- cd App
+- git clone https://github.com/coffeecw/community.git
+- yum install maven(自动安装openjdk)
+- java -version 
+- mvn -v  
+- mvn clean compile package(清空编译项目)
+
 
 
 ##  资料 
