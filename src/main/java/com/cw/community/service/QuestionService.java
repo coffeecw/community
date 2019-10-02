@@ -2,6 +2,7 @@ package com.cw.community.service;
 
 import com.cw.community.dto.PaginationDTO;
 import com.cw.community.dto.QuestionDTO;
+import com.cw.community.dto.QuestionQueryDTO;
 import com.cw.community.exception.CustomerErrorCode;
 import com.cw.community.exception.CustomizeException;
 import com.cw.community.mapper.QuestionMapper;
@@ -25,35 +26,56 @@ public class QuestionService {
     @Autowired
     private UserMapper userMapper;
 
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search, Integer page, Integer size) {
+        //判断search是否为空
+        if(StringUtils.isNotBlank(search)){
+            String[] tags = StringUtils.split(search, " ");
+            search = Arrays.stream(tags).collect(Collectors.joining("|"));
+            PaginationDTO paginationDTO = new PaginationDTO();
+            QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+            questionQueryDTO.setSearch(search);
+            Integer totalCount = questionMapper.countBySearch(questionQueryDTO);//获取查询问题总数
+            Integer offset = countPageAndOffset(page, size, paginationDTO, totalCount);
+            questionQueryDTO.setSize(size);
+            questionQueryDTO.setPage(offset);
+            List<Question> questions=questionMapper.selectBySearch(questionQueryDTO);
+            listQuestionDTO(paginationDTO, questions);
+            return paginationDTO;
+        }
         PaginationDTO paginationDTO = new PaginationDTO();
-        Integer totalCount = questionMapper.count();//获取问题总数
-        listCopy(page, size, paginationDTO, totalCount);
+        Integer totalCount = questionMapper.count();//获取查询问题总数
+        listCopy(page,size,paginationDTO,totalCount);
         return paginationDTO;
     }
 
-    private void listCopy(Integer page, Integer size, PaginationDTO paginationDTO, Integer totalCount) {
-        paginationDTO.setPagination(totalCount,page,size);
-        //防止页码数为负
-        if(page<=1){
-            page=1;
-        }else if(page>paginationDTO.getTotalPage()){//防止页码数超过最大页数
-            page = paginationDTO.getTotalPage();
-        }
-        //size*(page-1)
-        Integer offset = size*(page-1);
-        List<Question> questions=questionMapper.list(offset,size);
+    private void listQuestionDTO(PaginationDTO paginationDTO, List<Question> questions) {
         List<QuestionDTO> questionDTOList = new ArrayList<>();
-
-
         for (Question question : questions) {
-            User user =  userMapper.findById(question.getCreator());
+            User user = userMapper.findById(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
-            BeanUtils.copyProperties(question,questionDTO);
+            BeanUtils.copyProperties(question, questionDTO);
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
         paginationDTO.setData(questionDTOList);
+    }
+
+    private Integer countPageAndOffset(Integer page, Integer size, PaginationDTO paginationDTO, Integer totalCount) {
+        paginationDTO.setPagination(totalCount, page, size);
+        //防止页码数为负
+        if (page <= 1) {
+            page = 1;
+        } else if (page > paginationDTO.getTotalPage()) {//防止页码数超过最大页数
+            page = paginationDTO.getTotalPage();
+        }
+        //size*(page-1)
+        return (size * (page - 1));
+    }
+
+    private void listCopy(Integer page, Integer size, PaginationDTO paginationDTO, Integer totalCount) {
+        Integer offset = countPageAndOffset(page, size, paginationDTO, totalCount);
+        List<Question> questions=questionMapper.list(offset,size);
+        listQuestionDTO(paginationDTO, questions);
     }
 
     public PaginationDTO list(Integer userId, Integer page, Integer size) {

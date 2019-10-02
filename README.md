@@ -36,11 +36,11 @@ create table user(
 ```
 
 ##  工具 
-git:分布式版本控制工具 
-[git官网](https://git-scm.com/)  
-[Visual Paradigm](https://www.visual-paradigm.com/cn/) 
-[Lombok插件](https://projectlombok.org/) 
-[octotree](https://www.octotree.io) 
-[Table of content sidebar](https://chrome.google.com/webstore/detail/table-of-contents-sidebar/ohohkfheangmbedkgechjkmbepeikkej) 
-[one Tab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall) 
-[liveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei/related) 
+git:分布式版本控制工具   
+[git官网](https://git-scm.com/)    
+[Visual Paradigm](https://www.visual-paradigm.com/cn/)   
+[Lombok插件](https://projectlombok.org/)    
+[octotree](https://www.octotree.io)   
+[Table of content sidebar](https://chrome.google.com/webstore/detail/table-of-contents-sidebar/ohohkfheangmbedkgechjkmbepeikkej)   
+[one Tab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)   
+[liveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei/related)   
