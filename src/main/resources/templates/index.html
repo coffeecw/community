@@ -32,7 +32,7 @@
 <div class="container-fluid main">
     <div class="row">
         <!--左半部分-->
-        <div class="col-lg-9 col-md-12 col-sm-12 col-sm-12">
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
             <hr>
             <!--问题列表-->
@@ -87,10 +87,15 @@
             </nav>
         </div>
         <!--右半部分-->
-        <div class="col-lg-3 col-md-12 col-sm-12 col-sm-12">
-            <h3>热门话题</h3>
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 style="margin: 20px 90px;">关注站长微信</h3>
+                <img src="/images/wechat.png" class="img-thumbnail question-wechat">
+            </div>
         </div>
     </div>
 </div>
+<!--页尾-->
+<div th:insert="~{foot.html :: foot}"></div>
 </body>
 </html>
