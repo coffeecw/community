@@ -19,8 +19,9 @@
 ###运行项目  
 - cp src/main/resources/application.properties src/main/resources/application-production.properties    
 - mvn package  打包项目  
-- java -jar -Dspring.profiles.active=production community-0.0.1-SNAPSHOT.jar  (生产环境下运行项目)  
-
+- java -jar -Dspring.profiles.active=production community-0.0.1-SNAPSHOT.jar  (生产环境下运行项目)    
+- ps -aux | grep java
+- git pull
 
 
 

@@ -72,3 +72,182 @@
 2019-10-03 14:22:15.404 DEBUG 6456 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
 2019-10-03 14:22:15.404 DEBUG 6456 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
 2019-10-03 14:22:15.406 DEBUG 6456 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:22.629  INFO 18608 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 18608 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 14:39:22.634 DEBUG 18608 --- [restartedMain] com.cw.community.CommunityApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-03 14:39:22.634  INFO 18608 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 14:39:22.774  INFO 18608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 14:39:22.774  INFO 18608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 14:39:25.347  INFO 18608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 14:39:25.387  INFO 18608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 14:39:25.387  INFO 18608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 14:39:25.533  INFO 18608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 14:39:25.533  INFO 18608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2759 ms
+2019-10-03 14:39:26.307  INFO 18608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 14:39:26.411  INFO 18608 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 14:39:26.876  INFO 18608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 14:39:26.945  INFO 18608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 14:39:26.967  INFO 18608 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 5.105 seconds (JVM running for 8.268)
+2019-10-03 14:39:39.598  INFO 18608 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 14:39:39.599  INFO 18608 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 14:39:39.606  INFO 18608 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-03 14:39:39.641  INFO 18608 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 14:39:39.827  INFO 18608 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 14:39:39.834 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:39.851 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:39.865 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:39.872 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:39.872 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:39.875 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:39.897 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:39:39.898 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:39:39.907 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:39:39.908 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:39:39.908 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:39:39.912 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:39:39.913 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:39.913 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:39.915 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:39.923 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:39.924 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:39.925 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:39.926 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:39.926 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:39.928 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:39.928 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:39.929 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:39.931 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:39.931 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:39.931 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:39.932 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:40.373 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.375 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.378 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.379 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.379 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.380 DEBUG 18608 --- [http-nio-8888-exec-2] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.418 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.418 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.419 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.419 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.420 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.421 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.421 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.421 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.422 DEBUG 18608 --- [http-nio-8888-exec-3] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.422 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.422 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.423 DEBUG 18608 --- [http-nio-8888-exec-4] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.426 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.428 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.428 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.428 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.430 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.430 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.430 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.432 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.432 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.432 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.432 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.430 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.433 DEBUG 18608 --- [http-nio-8888-exec-5] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.433 DEBUG 18608 --- [http-nio-8888-exec-6] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.435 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.435 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.435 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.436 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:40.665 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:40.666 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:40.667 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:40.668 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:40.668 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:40.669 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:48.898 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.mapper.UserMapper.queryByToken     : ==>  Preparing: select * from user where token = ? 
+2019-10-03 14:39:48.898 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.mapper.UserMapper.queryByToken     : ==> Parameters: 424fbe55-268f-4618-b06e-fd57394294e9(String)
+2019-10-03 14:39:48.899 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.mapper.UserMapper.queryByToken     : <==      Total: 1
+2019-10-03 14:39:48.900 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : ==>  Preparing: select count(1) from notification where receiver = ? and status = ? 
+2019-10-03 14:39:48.900 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : ==> Parameters: 27(Integer), 2(Integer)
+2019-10-03 14:39:48.900 DEBUG 18608 --- [http-nio-8888-exec-9] c.c.c.m.N.countByUserIdAndStatus         : <==      Total: 1
+2019-10-03 14:39:48.917 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:39:48.918 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:39:48.919 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:39:48.920 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:39:48.920 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:39:48.922 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:39:48.922 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:48.923 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:48.924 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:48.924 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:48.924 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:48.928 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:48.928 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:48.928 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:48.929 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:48.930 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:48.930 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:48.931 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:48.932 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:48.932 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:48.933 DEBUG 18608 --- [http-nio-8888-exec-10] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:52.282 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:39:52.283 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:39:52.295 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:39:52.295 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:39:52.295 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:39:52.297 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:39:52.297 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:52.297 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:52.298 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:52.298 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:52.298 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:52.299 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:52.300 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:52.300 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:52.301 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:52.302 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:52.303 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:52.304 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:52.304 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:52.304 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:52.305 DEBUG 18608 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:54.430 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:39:54.430 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:39:54.432 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:39:54.432 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:39:54.433 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:39:54.439 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:39:54.439 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:54.439 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:54.440 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:54.443 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:54.443 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:54.444 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:54.445 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:54.445 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:54.446 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:54.446 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:54.446 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:54.447 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:39:54.447 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:39:54.447 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:39:54.449 DEBUG 18608 --- [http-nio-8888-exec-7] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:40:21.429 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:40:21.430 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:40:21.430 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:40:21.431 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:40:21.431 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:40:21.432 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:40:21.433 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:40:21.433 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:40:21.434 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:40:21.434 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:40:21.434 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:40:21.435 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:40:21.436 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:40:21.436 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:40:21.436 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:40:21.437 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:40:21.437 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:40:21.438 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:40:21.438 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:40:21.438 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:40:21.439 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
