@@ -251,3 +251,770 @@
 2019-10-03 14:40:21.438 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
 2019-10-03 14:40:21.438 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
 2019-10-03 14:40:21.439 DEBUG 18608 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:42:17.536  INFO 23416 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 23416 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 14:42:17.538 DEBUG 23416 --- [restartedMain] com.cw.community.CommunityApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-03 14:42:17.541  INFO 23416 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 14:42:17.585  INFO 23416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 14:42:17.586  INFO 23416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 14:42:18.937  INFO 23416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 14:42:18.960  INFO 23416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 14:42:18.961  INFO 23416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 14:42:19.094  INFO 23416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 14:42:19.094  INFO 23416 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1508 ms
+2019-10-03 14:42:19.601  INFO 23416 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 14:42:19.665  INFO 23416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 14:42:19.941  INFO 23416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 14:42:19.991  INFO 23416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 14:42:19.994  INFO 23416 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 2.913 seconds (JVM running for 4.939)
+2019-10-03 14:42:33.197  INFO 23416 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 14:42:33.198  INFO 23416 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 14:42:33.205  INFO 23416 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-03 14:42:33.258  INFO 23416 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 14:42:33.463  INFO 23416 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 14:42:33.470 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 14:42:33.486 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 14:42:33.500 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 14:42:33.503 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 14:42:33.504 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 14:42:33.510 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 14:42:33.511 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:42:33.511 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:42:33.514 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:42:33.523 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:42:33.524 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:42:33.525 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:42:33.526 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:42:33.526 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:42:33.529 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:42:33.530 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:42:33.530 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:42:33.532 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 14:42:33.533 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 14:42:33.534 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 14:42:33.535 DEBUG 23416 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 15:59:57.428 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 15:59:57.436 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 15:59:57.447 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 15:59:57.449 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 15:59:57.449 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 15:59:57.458 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 15:59:57.459 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 15:59:57.460 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 15:59:57.462 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 15:59:57.464 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 15:59:57.464 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 15:59:57.465 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 15:59:57.466 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 15:59:57.466 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 15:59:57.467 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 15:59:57.468 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 15:59:57.468 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 15:59:57.469 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 15:59:57.469 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 15:59:57.469 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 15:59:57.470 DEBUG 23416 --- [http-nio-8888-exec-8] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:39:54.497  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2172 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:39:54.501 DEBUG 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-03 21:39:54.502  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:39:54.679  INFO 2172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:39:54.679  INFO 2172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:39:57.360  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:39:57.389  INFO 2172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:39:57.390  INFO 2172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:39:57.555  INFO 2172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:39:57.555  INFO 2172 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2876 ms
+2019-10-03 21:39:58.355  INFO 2172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:39:58.452  INFO 2172 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:39:58.923  INFO 2172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:39:58.991  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:39:59.004  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 5.459 seconds (JVM running for 8.855)
+2019-10-03 21:40:09.820  INFO 2172 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:40:09.820  INFO 2172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:40:09.832  INFO 2172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-03 21:40:10.030  INFO 2172 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:40:10.352  INFO 2172 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 21:40:10.362 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 21:40:10.380 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 21:40:10.415 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 21:40:10.419 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 21:40:10.420 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 21:40:10.432 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 21:40:10.433 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:40:10.434 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:40:10.437 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:40:10.446 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:40:10.446 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:40:10.447 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:40:10.448 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:40:10.448 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:40:10.450 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:40:10.450 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:40:10.451 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:40:10.452 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:40:10.453 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:40:10.453 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:40:10.455 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:41:23.106  INFO 2172 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:41:23.107  INFO 2172 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-03 21:41:23.115  INFO 2172 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-03 21:41:24.586  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2172 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:41:24.586 DEBUG 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-03 21:41:24.587  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:41:24.941  WARN 2172 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cw.community]' package. Please check your configuration.
+2019-10-03 21:41:25.114  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:41:25.116  INFO 2172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:41:25.117  INFO 2172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:41:25.186  INFO 2172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:41:25.187  INFO 2172 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 598 ms
+2019-10-03 21:41:25.273  INFO 2172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:41:25.295  INFO 2172 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:41:25.476  INFO 2172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:41:25.494  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:41:25.495  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 0.944 seconds (JVM running for 95.346)
+2019-10-03 21:41:25.518  INFO 2172 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 21:41:30.934  INFO 2172 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:41:32.657  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2172 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:41:32.662 DEBUG 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-03 21:41:32.662  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:41:33.161  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:41:33.163  INFO 2172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:41:33.163  INFO 2172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:41:33.200  INFO 2172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:41:33.200  INFO 2172 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 529 ms
+2019-10-03 21:41:33.322  INFO 2172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:41:33.343  INFO 2172 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:41:33.497  INFO 2172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:41:33.517  INFO 2172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:41:33.517  INFO 2172 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 0.893 seconds (JVM running for 103.368)
+2019-10-03 21:41:33.520  INFO 2172 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' customizeErrorController (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 21:41:50.514  INFO 2172 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:41:50.515  INFO 2172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:41:50.523  INFO 2172 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-03 21:41:50.526  INFO 2172 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-03 21:41:50.540  INFO 2172 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-03 21:41:50.540 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==>  Preparing: select count(1) from question 
+2019-10-03 21:41:50.541 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : ==> Parameters: 
+2019-10-03 21:41:50.542 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.count        : <==      Total: 1
+2019-10-03 21:41:50.543 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==>  Preparing: select * from question order by gmt_create desc limit ?,? 
+2019-10-03 21:41:50.544 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : ==> Parameters: 0(Integer), 5(Integer)
+2019-10-03 21:41:50.548 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.QuestionMapper.list         : <==      Total: 5
+2019-10-03 21:41:50.549 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:41:50.550 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:41:50.553 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:41:50.563 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:41:50.563 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:41:50.564 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:41:50.565 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:41:50.565 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:41:50.566 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:41:50.567 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:41:50.567 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:41:50.568 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:41:50.568 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==>  Preparing: select * from user where id = ? 
+2019-10-03 21:41:50.569 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : ==> Parameters: 27(Integer)
+2019-10-03 21:41:50.569 DEBUG 2172 --- [http-nio-8888-exec-1] c.c.c.mapper.UserMapper.findById         : <==      Total: 1
+2019-10-03 21:43:25.997  INFO 15648 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 15648 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:43:26.004  INFO 15648 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:43:26.116  INFO 15648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:43:26.116  INFO 15648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:43:27.796  INFO 15648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:43:27.826  INFO 15648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:43:27.827  INFO 15648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:43:27.987  INFO 15648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:43:27.988  INFO 15648 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1871 ms
+2019-10-03 21:43:28.520  INFO 15648 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:43:28.592  INFO 15648 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:43:28.898  INFO 15648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:43:28.954  INFO 15648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:43:28.956  INFO 15648 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.517 seconds (JVM running for 6.011)
+2019-10-03 21:44:49.967  INFO 19888 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 19888 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:44:49.970  INFO 19888 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:44:50.099  INFO 19888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:44:50.099  INFO 19888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:44:51.762  INFO 19888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:44:51.792  INFO 19888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:44:51.793  INFO 19888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:44:51.947  INFO 19888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:44:51.948  INFO 19888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1849 ms
+2019-10-03 21:44:52.552  INFO 19888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:44:52.630  INFO 19888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:44:52.949  INFO 19888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:44:52.999  INFO 19888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:44:53.002  INFO 19888 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.535 seconds (JVM running for 5.785)
+2019-10-03 21:45:09.581  INFO 19888 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:45:09.582  INFO 19888 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:45:09.590  INFO 19888 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-03 21:45:09.653  INFO 19888 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:45:09.877  INFO 19888 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 21:47:36.407  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 5868 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:47:36.409  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:47:36.510  INFO 5868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:47:36.511  INFO 5868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:47:37.956  INFO 5868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:47:37.981  INFO 5868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:47:37.982  INFO 5868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:47:38.125  INFO 5868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:47:38.125  INFO 5868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1614 ms
+2019-10-03 21:47:38.654  INFO 5868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:47:38.726  INFO 5868 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:47:39.055  INFO 5868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:47:39.125  INFO 5868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:47:39.128  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.24 seconds (JVM running for 5.398)
+2019-10-03 21:47:47.154  INFO 5868 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:47:47.154  INFO 5868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:47:47.163  INFO 5868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-03 21:47:47.224  INFO 5868 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:47:47.441  INFO 5868 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 21:48:21.556  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2704 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:48:21.559  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:48:21.606  INFO 2704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:48:21.608  INFO 2704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:48:23.135  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:48:23.160  INFO 2704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:48:23.160  INFO 2704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:48:23.308  INFO 2704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:48:23.309  INFO 2704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1700 ms
+2019-10-03 21:48:23.823  INFO 2704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:48:23.889  INFO 2704 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:48:24.190  INFO 2704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:48:24.240  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:48:24.243  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.152 seconds (JVM running for 5.276)
+2019-10-03 21:48:30.831  INFO 2704 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:48:30.831  INFO 2704 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:48:30.841  INFO 2704 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-03 21:48:30.904  INFO 2704 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:48:31.162  INFO 2704 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 21:49:30.825  INFO 2704 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:49:30.825  INFO 2704 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-03 21:49:30.829  INFO 2704 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-03 21:49:32.291  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2704 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:49:32.292  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:49:32.461  WARN 2704 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cw.community]' package. Please check your configuration.
+2019-10-03 21:49:32.719  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:49:32.721  INFO 2704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:49:32.721  INFO 2704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:49:32.783  INFO 2704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:49:32.784  INFO 2704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 490 ms
+2019-10-03 21:49:32.995  INFO 2704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:49:33.044  INFO 2704 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:49:33.319  INFO 2704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:49:33.349  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:49:33.349  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 1.084 seconds (JVM running for 74.382)
+2019-10-03 21:49:33.354  INFO 2704 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 21:49:36.167  INFO 2704 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:49:37.508  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 2704 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:49:37.508  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:49:37.968  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:49:37.969  INFO 2704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:49:37.969  INFO 2704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:49:38.009  INFO 2704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:49:38.010  INFO 2704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 500 ms
+2019-10-03 21:49:38.145  INFO 2704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:49:38.165  INFO 2704 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:49:38.354  INFO 2704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:49:38.376  INFO 2704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:49:38.376  INFO 2704 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 0.893 seconds (JVM running for 79.41)
+2019-10-03 21:49:38.380  INFO 2704 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' customizeErrorController (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 21:50:01.572  INFO 2704 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:50:01.574  INFO 2704 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:50:01.586  INFO 2704 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-10-03 21:50:01.591  INFO 2704 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-10-03 21:50:01.599  INFO 2704 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-10-03 21:51:48.555  INFO 19064 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 19064 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:51:48.558  INFO 19064 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:51:48.649  INFO 19064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:51:48.649  INFO 19064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:51:51.300  INFO 19064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:51:51.389  INFO 19064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:51:51.390  INFO 19064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:51:51.872  INFO 19064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:51:51.873  INFO 19064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3224 ms
+2019-10-03 21:51:52.535  INFO 19064 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:51:52.594  INFO 19064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:51:52.923  INFO 19064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:51:52.981  INFO 19064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:51:52.986  INFO 19064 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 4.972 seconds (JVM running for 7.092)
+2019-10-03 21:52:17.242  INFO 19064 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:52:17.242  INFO 19064 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:52:17.256  INFO 19064 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-10-03 21:52:17.310  INFO 19064 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:52:17.509  INFO 19064 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 21:53:55.523  INFO 7260 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 7260 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 21:53:55.526  INFO 7260 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 21:53:55.593  INFO 7260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 21:53:55.594  INFO 7260 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 21:53:56.993  INFO 7260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 21:53:57.020  INFO 7260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 21:53:57.021  INFO 7260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 21:53:57.161  INFO 7260 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 21:53:57.161  INFO 7260 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1567 ms
+2019-10-03 21:53:57.664  INFO 7260 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 21:53:57.738  INFO 7260 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 21:53:58.035  INFO 7260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 21:53:58.085  INFO 7260 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 21:53:58.090  INFO 7260 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 2.992 seconds (JVM running for 5.195)
+2019-10-03 21:54:11.719  INFO 7260 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 21:54:11.720  INFO 7260 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 21:54:11.728  INFO 7260 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-03 21:54:11.779  INFO 7260 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 21:54:11.963  INFO 7260 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:11:49.459  INFO 15116 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 15116 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:11:49.461  INFO 15116 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:11:49.561  INFO 15116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:11:49.562  INFO 15116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:11:50.959  INFO 15116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:11:50.984  INFO 15116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:11:50.985  INFO 15116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:11:51.138  INFO 15116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:11:51.138  INFO 15116 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1576 ms
+2019-10-03 22:11:51.673  INFO 15116 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:11:51.741  INFO 15116 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:11:52.043  INFO 15116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:11:52.094  INFO 15116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:11:52.098  INFO 15116 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.136 seconds (JVM running for 5.235)
+2019-10-03 22:12:22.642  INFO 15116 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:12:22.642  INFO 15116 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:12:22.649  INFO 15116 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-03 22:12:22.697  INFO 15116 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:12:22.900  INFO 15116 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:13:34.024  INFO 20788 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 20788 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:13:34.033  INFO 20788 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:13:34.101  INFO 20788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:13:34.101  INFO 20788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:13:35.659  INFO 20788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:13:35.694  INFO 20788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:13:35.695  INFO 20788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:13:35.841  INFO 20788 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:13:35.841  INFO 20788 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1740 ms
+2019-10-03 22:13:36.377  INFO 20788 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:13:36.448  INFO 20788 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:13:36.746  INFO 20788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:13:36.800  INFO 20788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:13:36.803  INFO 20788 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.324 seconds (JVM running for 5.503)
+2019-10-03 22:13:57.802  INFO 20788 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:13:57.802  INFO 20788 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:13:57.808  INFO 20788 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-03 22:13:57.854  INFO 20788 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:13:58.045  INFO 20788 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:19:09.715  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 22256 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:19:09.717  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:19:09.846  INFO 22256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:19:09.847  INFO 22256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:19:11.905  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:19:11.935  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:19:11.936  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:19:12.077  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:19:12.077  INFO 22256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2230 ms
+2019-10-03 22:19:12.611  INFO 22256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:19:12.684  INFO 22256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:19:12.984  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:19:13.040  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:19:13.045  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.902 seconds (JVM running for 6.215)
+2019-10-03 22:19:44.936  INFO 22256 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:19:44.937  INFO 22256 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:19:44.945  INFO 22256 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-10-03 22:19:45.000  INFO 22256 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:19:45.187  INFO 22256 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:23:19.503  INFO 22256 --- [Thread-15] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:23:19.504  INFO 22256 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-10-03 22:23:19.514  INFO 22256 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-10-03 22:23:20.899  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 22256 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:23:20.900  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:23:21.200  WARN 22256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cw.community]' package. Please check your configuration.
+2019-10-03 22:23:21.394  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:23:21.395  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:23:21.396  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:23:21.452  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:23:21.452  INFO 22256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 546 ms
+2019-10-03 22:23:21.513  INFO 22256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:23:21.527  INFO 22256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:23:22.348  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:23:22.368  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:23:22.368  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 1.52 seconds (JVM running for 255.539)
+2019-10-03 22:23:22.393  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 22:23:26.451  INFO 22256 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:23:27.842  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 22256 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:23:27.843  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:23:28.272  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:23:28.273  INFO 22256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:23:28.273  INFO 22256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:23:28.308  INFO 22256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:23:28.308  INFO 22256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 464 ms
+2019-10-03 22:23:28.432  INFO 22256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:23:28.453  INFO 22256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:23:28.604  INFO 22256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:23:28.623  INFO 22256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:23:28.623  INFO 22256 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 0.808 seconds (JVM running for 261.795)
+2019-10-03 22:23:28.627  INFO 22256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' customizeErrorController (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2019-10-03 22:24:06.443  INFO 4056 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 4056 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:24:06.446  INFO 4056 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:24:06.488  INFO 4056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:24:06.488  INFO 4056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:24:07.883  INFO 4056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:24:07.907  INFO 4056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:24:07.908  INFO 4056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:24:08.053  INFO 4056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:24:08.054  INFO 4056 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1565 ms
+2019-10-03 22:24:08.591  INFO 4056 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:24:08.674  INFO 4056 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:24:09.029  INFO 4056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:24:09.084  INFO 4056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:24:09.098  INFO 4056 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.272 seconds (JVM running for 6.55)
+2019-10-03 22:24:25.144  INFO 4056 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:24:25.145  INFO 4056 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:24:25.150  INFO 4056 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-03 22:24:25.198  INFO 4056 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:24:25.401  INFO 4056 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:25:51.050  INFO 7316 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 7316 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:25:51.062  INFO 7316 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:25:51.139  INFO 7316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:25:51.139  INFO 7316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:25:52.804  INFO 7316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:25:52.833  INFO 7316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:25:52.834  INFO 7316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:25:52.992  INFO 7316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:25:52.992  INFO 7316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1853 ms
+2019-10-03 22:25:53.478  INFO 7316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:25:53.633  INFO 7316 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:25:53.943  INFO 7316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:25:53.999  INFO 7316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:25:54.002  INFO 7316 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.449 seconds (JVM running for 5.614)
+2019-10-03 22:26:03.845  INFO 7316 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:26:03.845  INFO 7316 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:26:03.851  INFO 7316 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-10-03 22:26:03.906  INFO 7316 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:26:04.111  INFO 7316 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:26:55.152  INFO 22812 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 22812 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:26:55.155  INFO 22812 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:26:55.237  INFO 22812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:26:55.238  INFO 22812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:26:56.642  INFO 22812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:26:56.667  INFO 22812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:26:56.667  INFO 22812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:26:56.811  INFO 22812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:26:56.811  INFO 22812 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1573 ms
+2019-10-03 22:26:57.335  INFO 22812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:26:57.397  INFO 22812 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:26:57.684  INFO 22812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:26:57.734  INFO 22812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:26:57.737  INFO 22812 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.105 seconds (JVM running for 5.179)
+2019-10-03 22:27:18.483  INFO 22812 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:27:18.484  INFO 22812 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:27:18.493  INFO 22812 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-10-03 22:27:18.541  INFO 22812 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:27:18.726  INFO 22812 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:29:51.845  INFO 17640 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 17640 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:29:51.849  INFO 17640 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:29:51.906  INFO 17640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:29:51.906  INFO 17640 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:29:53.354  INFO 17640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:29:53.379  INFO 17640 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:29:53.380  INFO 17640 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:29:53.518  INFO 17640 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:29:53.519  INFO 17640 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1613 ms
+2019-10-03 22:29:53.958  INFO 17640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:29:54.095  INFO 17640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:29:54.390  INFO 17640 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:29:54.442  INFO 17640 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:29:54.445  INFO 17640 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.172 seconds (JVM running for 5.758)
+2019-10-03 22:30:13.262  INFO 17640 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:30:13.262  INFO 17640 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:30:13.273  INFO 17640 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-10-03 22:30:13.327  INFO 17640 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:30:13.523  INFO 17640 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:31:25.780  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 5868 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:31:25.785  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:31:25.875  INFO 5868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:31:25.875  INFO 5868 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:31:27.355  INFO 5868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:31:27.379  INFO 5868 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:31:27.379  INFO 5868 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:31:27.523  INFO 5868 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:31:27.523  INFO 5868 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1647 ms
+2019-10-03 22:31:28.024  INFO 5868 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:31:28.095  INFO 5868 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:31:28.390  INFO 5868 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:31:28.446  INFO 5868 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:31:28.452  INFO 5868 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.265 seconds (JVM running for 5.595)
+2019-10-03 22:31:41.928  INFO 5868 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:31:41.929  INFO 5868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:31:41.935  INFO 5868 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-03 22:31:41.987  INFO 5868 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:31:42.190  INFO 5868 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:33:15.544  INFO 7572 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 7572 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:33:15.548  INFO 7572 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:33:15.600  INFO 7572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:33:15.601  INFO 7572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:33:17.119  INFO 7572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:33:17.149  INFO 7572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:33:17.149  INFO 7572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:33:17.300  INFO 7572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:33:17.300  INFO 7572 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1699 ms
+2019-10-03 22:33:17.756  INFO 7572 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:33:17.895  INFO 7572 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:33:18.195  INFO 7572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:33:18.249  INFO 7572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:33:18.252  INFO 7572 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.191 seconds (JVM running for 5.3)
+2019-10-03 22:33:39.467  INFO 7572 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:33:39.467  INFO 7572 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:33:39.474  INFO 7572 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-03 22:33:39.518  INFO 7572 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:33:39.702  INFO 7572 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:34:25.518  INFO 17564 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 17564 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:34:25.527  INFO 17564 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:34:25.623  INFO 17564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:34:25.623  INFO 17564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:34:26.999  INFO 17564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:34:27.023  INFO 17564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:34:27.024  INFO 17564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:34:27.175  INFO 17564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:34:27.176  INFO 17564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1553 ms
+2019-10-03 22:34:27.723  INFO 17564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:34:27.788  INFO 17564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:34:28.098  INFO 17564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:34:28.151  INFO 17564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:34:28.154  INFO 17564 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.273 seconds (JVM running for 5.335)
+2019-10-03 22:34:35.148  INFO 17564 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:34:35.148  INFO 17564 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:34:35.154  INFO 17564 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-10-03 22:34:35.211  INFO 17564 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:34:35.422  INFO 17564 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:47:06.631  INFO 8956 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 8956 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:47:06.636  INFO 8956 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:47:06.711  INFO 8956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:47:06.711  INFO 8956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:47:08.520  INFO 8956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:47:08.548  INFO 8956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:47:08.549  INFO 8956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:47:08.710  INFO 8956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:47:08.710  INFO 8956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1998 ms
+2019-10-03 22:47:09.337  INFO 8956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:47:09.405  INFO 8956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:47:09.722  INFO 8956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:47:09.778  INFO 8956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:47:09.784  INFO 8956 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.719 seconds (JVM running for 6.364)
+2019-10-03 22:47:45.738  INFO 8956 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:47:45.739  INFO 8956 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:47:45.746  INFO 8956 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-10-03 22:47:45.810  INFO 8956 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:47:46.007  INFO 8956 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-03 22:53:35.483  INFO 5532 --- [restartedMain] com.cw.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-4PDEUT4 with PID 5532 (F:\study\maven\community\target\classes started by 陈伟 in F:\study\maven\community)
+2019-10-03 22:53:35.486  INFO 5532 --- [restartedMain] com.cw.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2019-10-03 22:53:35.537  INFO 5532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-03 22:53:35.537  INFO 5532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-03 22:53:37.312  INFO 5532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-03 22:53:37.337  INFO 5532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-03 22:53:37.337  INFO 5532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-03 22:53:37.483  INFO 5532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-10-03 22:53:37.483  INFO 5532 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1946 ms
+2019-10-03 22:53:38.039  INFO 5532 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-03 22:53:38.117  INFO 5532 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-10-03 22:53:38.415  INFO 5532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-03 22:53:38.467  INFO 5532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2019-10-03 22:53:38.469  INFO 5532 --- [restartedMain] com.cw.community.CommunityApplication    : Started CommunityApplication in 3.661 seconds (JVM running for 6.011)
+2019-10-03 22:54:02.869  INFO 5532 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-03 22:54:02.870  INFO 5532 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-03 22:54:02.880  INFO 5532 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-03 22:54:02.967  INFO 5532 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-03 22:54:03.209  INFO 5532 --- [http-nio-8888-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
