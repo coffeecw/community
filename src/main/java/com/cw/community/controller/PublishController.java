@@ -18,8 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class PublishController {
-
-
     @Autowired
     private QuestionService questionService;
 

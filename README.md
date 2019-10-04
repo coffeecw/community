@@ -1,15 +1,14 @@
 ##  技术社区   
 
-##部署   
- 
-###依赖   
+##  部署
+###  依赖   
  
 - git  (git工具管理项目版本)
 - JDK   (编译代码)
 - Maven  (构建项目)
 - MySql   (数据库)
 
-##步骤  
+##  步骤  
 
 - yum update (更新yum)
 - yum install git 
@@ -21,7 +20,7 @@
 - mvn -v  
 - mvn clean compile package(清空编译项目)  
 
-###运行项目  
+###  运行项目  
 
 - cp src/main/resources/application.properties src/main/resources/application-production.properties    
 - mvn package  打包项目  

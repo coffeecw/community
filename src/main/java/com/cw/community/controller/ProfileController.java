@@ -22,7 +22,7 @@ public class ProfileController {
     private NotificationService notificationService;
     @GetMapping("/profile/{action}")
     public String profile(@RequestParam(name = "page",defaultValue = "1") Integer page,
-                          @RequestParam(name = "size",defaultValue = "5") Integer size,
+                          @RequestParam(name = "size",defaultValue = "10") Integer size,
                           @PathVariable(name = "action") String action, Model model,
                           HttpServletRequest request){
         //获取拦截器中设置的session
