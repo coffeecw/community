@@ -8,7 +8,7 @@
 - Maven  (构建项目)
 - MySql   (数据库)
 
-##  步骤  
+###  步骤  
 
 - yum update (更新yum)
 - yum install git 
@@ -26,7 +26,9 @@
 - mvn package  打包项目  
 - java -jar -Dspring.profiles.active=production community-0.0.1-SNAPSHOT.jar  (生产环境下运行项目)    
 - ps -aux | grep java
-- git pull
+- git pull(可能发生冲突)---(git stash ,git pull, git stash pop 三步解决)
+- nohup java -jar -Dspring.profiles.active=production target/community-0.0.1-SNAPSHOT.jar & (在服务器后台一直运行)
+
 
 
 

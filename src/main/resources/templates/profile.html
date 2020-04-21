@@ -12,9 +12,6 @@
     <script src="/js/jquery-3.4.1.min.js"></script>
     <!--bootstrap js type="application/javascript"记得加上-->
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
-
-
-
 </head>
 <body>
 <!--导航栏-->
@@ -92,7 +89,7 @@
                 <!--通知列表-->
                 <div class="media" th:each="notification : ${pagination.data}">
                     <!--通知内容-->
-                    <div class="media-body">
+                    <div class="media-body" style="font-size: 20px;">
                         <p class="media-heading">
                             <span th:text="${notification.notifierName+' '+notification.typeName}"></span>
                             <a th:href="@{'/notification/'+ ${notification.id}}" th:text="${notification.outerTitle}"></a>
